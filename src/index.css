@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .primary-btn{
+        @apply bg-orange-500 text-black font-semibold px-4 py-2 rounded-full;
+    }
+    .secondary-btn{
+        @apply bg-gray-300 text-black font-semibold px-4 py-2 rounded-full;
+    }
+}
+@Layer utilities{
+    .img-shadow{
+        filter: box-shadow(5px,5px,10px rgba(0,0,0,0.4));
+    }
+}
+/* Hide scrollbar for Chrome, Safari, and Opera */
+::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge, and Firefox */
+  body, html {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  
+
